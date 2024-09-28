@@ -1,0 +1,238 @@
+/* Definir a mesma largura para inputs e selects */
+.newItem input, .newItem select {
+    width: 100%;
+    box-sizing: border-box; /* Para garantir que o padding não altere a largura */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Definições gerais para body, ul, li */
+body,
+ul,
+li {
+    font-family: 'Roboto', sans-serif;
+    color: #0c0c0c;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: white;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Estilização do título */
+.title {
+    color: white;
+    width: 100%;
+    background-color: hsl(171, 100%, 39%);
+    display: inline-block;
+    padding: 2px 0px;
+    position: relative;
+    top: 0px;
+}
+
+/* Estilização do banner */
+.banner {
+    height: 400px;
+    overflow: hidden;
+    margin: -20px auto 0px auto;
+}
+
+.banner img {
+    margin: -50px 0px 0px 0px;
+    width: 80%;
+    padding: 0px 0px;
+    border: 1px solid white;
+    margin: -10px auto 100px auto;
+}
+
+/* Estilização do formulário de novo passageiro */
+.newItem {
+    width: 60%;
+    background-color: transparent;
+    border: 1px ridge #00c6a9;
+    outline: inset;
+    box-shadow: 20px 5px 20px grey;
+    border-radius: 20px;
+    padding: 40px 60px;
+    margin: 30px auto 50px auto;
+}
+
+/* Estilização do título dentro do formulário */
+.newItem h4 {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
+.newItem h4 span {
+    color: #00c6a9;
+}
+
+/* Estilização dos campos do formulário */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center; /* Alinha os labels e campos verticalmente */
+}
+
+.form-row label {
+    flex-basis: 35%; /* Diminuir um pouco a largura dos labels */
+    text-align: right;
+    padding-right: 10px;
+    font-size: 16px; /* Tamanho do texto do label */
+}
+
+.form-row input,
+.form-row select {
+    flex-basis: 60%; /* Aumentar a largura dos campos */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilização do botão adicionar */
+.newItem button {
+    padding: 8px 16px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Estilização do botão de seleção */
+.addBtnSel {
+    padding: 9px 10px;
+    background-color: rgb(35, 32, 24);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.addBtnSel:hover {
+    background-color: #2ab53a;
+    color: white;
+}
+
+/* Estilização da tabela */
+/* Garantir que todas as colunas tenham uma largura proporcional */
+/* Estilo para a tabela com largura automática */
+table {
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Forçar quebra de linha nas células da tabela */
+/* Definir larguras mínimas e máximas para colunas específicas */
+th, td {
+    border: 1px solid black;
+    padding: 6px; /* Reduzir o padding para economizar espaço */
+    font-size: 13px; /* Ajustar a fonte */
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    white-space: normal;
+    text-align: left;
+    min-width: 50px; /* Ajustar largura mínima conforme necessário */
+}
+
+/* Estilização da última coluna */
+td:last-child {
+    text-align: center;
+    padding: 0px 0px 0px 70px;
+}
+
+/* Estilização das linhas ímpares */
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+/* Estilização das linhas ao passar o mouse */
+tr:hover {
+    background: rgb(200, 199, 199);
+}
+
+/* Definir larguras mínimas para os títulos das colunas que estão apertadas */
+th:nth-child(2), td:nth-child(2) { /* Idade */
+    min-width: 50px;
+}
+
+th:nth-child(4), td:nth-child(4) { /* Tipo de Passageiro */
+    min-width: 120px;
+}
+
+th:nth-child(5), td:nth-child(5) { /* Motivo de Viagem */
+    min-width: 120px;
+}
+
+th:nth-child(9), td:nth-child(9) { /* Entretenimento no Voo */
+    min-width: 150px;
+}
+
+/* Estilização para centralizar botão */
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Definir uma largura adequada para a coluna de deletar */
+th:nth-child(16), td:nth-child(16) {
+    width: 10%; /* Ajuste conforme necessário */
+    text-align: center; /* Centralizar o conteúdo da célula */
+}
+
+/* Estilização do botão de deletar */
+.deleteBtn {
+    padding: 5px 10px;
+    background-color: #f44336; /* Cor vermelha para o botão de deletar */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.deleteBtn:hover {
+    background-color: #d32f2f; /* Mudar a cor ao passar o mouse */
+}
+
+/* Estilo básico para a área de feedback */
+.feedback {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Estilo para satisfação */
+.satisfied {
+    background-color: #00c853;
+    color: white;
+}
+
+/* Estilo para insatisfação */
+.unsatisfied {
+    background-color: #d50000;
+    color: white;
+}
+
+/* Ocultar feedback quando não utilizado */
+.hidden {
+    display: none;
+}
